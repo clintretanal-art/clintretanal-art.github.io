@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Too Good at Goodbyes</title>
+  <style>
+    body {
+      background-color: #1f1f1f;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .title {
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      color: #e94558;
+    }
+
+    .lyrics {
+      margin: 20px 0;
+      min-height: 120px;
+      line-height: 1.6em;
+      font-size: 1.2em;
+    }
+
+    .gif {
+      width: 300px;
+      margin: 20px 0;
+      border-radius: 10px;
+      display: none;
+    }
+
+    button {
+      background-color: #e94558;
+      border: none;
+      padding: 10px 25px;
+      color: white;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c23b4d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="title">Too Good at Goodbyes 🎵</h2>
+    <div class="lyrics" id="lyricsBox">Click below to start the lyrics</div>
+    <img class="gif" id="gif" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="sad gif" />
+    <button id="showBtn">Show me lyrics</button>
+  </div>
+
+  <script>
+    const lyrics = [
+      "You must think that I'm stupid",
+      "You must think that I'm a fool",
+      "You must think that I'm new to this",
+      "But I have seen this all before",
+      "",
+      "I'm never gonna let you close to me",
+      "Even though
